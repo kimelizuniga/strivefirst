@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Strive First</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <a href="index.html">
+              <img id="nav-logo" src="assets/images/logo.png" alt="logo">
+           </a>
+        
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent" >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Services
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="moving.html">Moving</a>
+                    <a class="dropdown-item" href="installation.html">Installation and Assembly</a>
+                    <a class="dropdown-item" href="handyman.html">Handyman Services</a>
+                    <a class="dropdown-item" href="delivery.html">Delivery</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="appointment.html">Book An Appointment</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown">Company</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="about.html">About Us</a>
+                      <a class="dropdown-item" href="vision.html">Vision and Mission</a>
+                      <a class="dropdown-item" href="history.html">
+                          Company History
+                      </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    
+    <section id="appointment">
+        <div class="text-center">
+            <h4 class="mb-3">Book An Appointment</h4>
+            <p>To book an appointment, please complete the form below. We'll get back to you as soon as possible.</p>
+        </div>
+        <form class="mt-5" name="appointment" method="POST" data-netlify="true">
+            <div class="form-row w-50 mx-auto">
+                <div class="form-group col-md-5">
+                    <label for="inputName">Full Name <span class="colRed">*</span></label>
+                    <input type="text" name="inputName" class="form-control" id="inputName" placeholder="Full Name"
+                        required>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="inputEmail">Email <span class="colRed">*</span></label>
+                    <input type="email" name="email" class="form-control" id="inputEmail"
+                        placeholder="email@example.com" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" name="address" class="form-control" id="inputAddress" placeholder="123 Rideau St.">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputCity">City</label>
+                    <input type="text" name="city" class="form-control" id="inputCity" placeholder="Ottawa">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputProvince">Province</label>
+                    <select class="mr-sm-2 custom-select" name="province" id="province" required>
+                        <option value="Ontario">ON</option>
+                        <option value="Quebec">QC</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputPhone">Phone</label>
+                    <input type="tel" name="phone" class="form-control" id="inputPhone" placeholder="Phone Number">
+                </div>
+                <div class="col-md-5 form-group">
+                    <label for="date">Preferred Date: <span class="colRed">*</span></label>
+                    <input class="form-control" type="date" name="date" id="date" required>
+                </div>
+                
+                <div class="col-md-4">
+                    <label class="mr-sm-2" for="serviceType">Service Type <span class="colRed">*</span></label>
+                    <select name="service" class="custom-select mr-sm-2" id="serviceType" required>
+                        <option value="Moving">Moving</option>
+                        <option value="Installation and Assembly">Installation and Assembly</option>
+                        <option value="Handyman Services">Handyman Services</option>
+                        <option value="Delivery">Delivery</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="col-12 form-group">
+                    <label for="message">Comments</label>
+                    <textarea name="message" class="form-control" id="message" cols="30" rows="8"></textarea>
+                </div>
+            </div>  
+            <div class="text-center">
+              <button class="btn button" type="submit">Send</button>
+            </div>
+          </form>
+    </section>
+
+    <footer>
+      <div class="row pt-3 m-0">
+        <div class="col-md-6">
+          <h6 class="colRed">Quick Links</h6>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li>
+              <span class="colRed">Services</span>
+              <ul>
+                <li><a href="">Moving</a></li>
+                <li><a href="">Installation and Assemlby</a></li>
+                <li><a href="">Handyman Services</a></li>
+                <li><a href="">Delivery</a></li>
+              </ul>
+            </li>
+            <li><a href="">Book An Appointment</a></li>
+            <li>
+              <span class="colRed">Company</span>
+              <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Our Mission</a></li>
+                <li><a href="">Company History</a></li>
+              </ul>
+            </li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 flex">
+          <h6 class="colRed">
+            Follow Us on Facebook and Instagram!
+          </h6>
+          <div>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-3">Copyright 2021 Strive First</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
