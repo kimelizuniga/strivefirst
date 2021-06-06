@@ -107,15 +107,15 @@ section.services img {
 
 .landing-text-container {
     background-color: rgba(255, 255, 255, 0.8);
-    height: 30vh;
-    width: 30%;
+    height: 25vh;
+    width: 28%;
     margin: auto;
     border-radius: 1em;
 }
 
 .landing-text {
-    padding-top: 12vh;
-    font-size: 6vh;
+    padding-top: 10.5vh;
+    font-size: 4vh;
 }
 
 .services {
@@ -168,6 +168,7 @@ section.services img {
     color: white;
     height: 3em;
     line-height: 2em;
+    min-width: 100px;
 }
 
 .whiteBackground {
