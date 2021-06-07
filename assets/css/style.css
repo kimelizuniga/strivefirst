@@ -29,7 +29,7 @@ footer {
     padding-bottom: 0.1em;
 }
 
-ul {
+ul, li {
     list-style: none;
 }
 
@@ -134,7 +134,8 @@ section.services img {
 
 .servicesLeftMobile, .servicesRightMobile {
     color: rgb(71, 69, 69);
-    margin-top: 1.5em;
+    position: absolute;
+    margin-top: 8vw !important;
 }
 
 .slideshow {
@@ -175,6 +176,12 @@ section.services img {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 1em;
     padding: 1em;
+}
+
+.beigeBackground {
+    background-color: #f3f6ef;
+    border-radius: 1em;
+    padding: 1.5em;
 }
 
 .slides {
@@ -227,6 +234,13 @@ section.services img {
     font-size: 0.8em;
     padding-top: 2em;
 }
+
+.caption {
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: -1em;
+}
+
 #nav-logo {
     width: 50px;
     position: absolute;
