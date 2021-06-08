@@ -1,0 +1,15 @@
+# mod_rewrite starts here
+
+RewriteEngine on
+
+# does not apply to existing directories, meaning if the folder exists on the server then don't change anything and don't run the rule!
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Check for file with  extension, if file doesn't exist, don't run the rule
+
+RewriteCond %{REQUEST_FILENAME}\ -f
+
+# Show the page that has the  extension
+
+RewriteRule ^(.*)$ $1 [NC, L]
