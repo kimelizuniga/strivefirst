@@ -255,6 +255,7 @@ section.services img {
     border-radius: 0.5em;
     margin: 2em;
     width: 80%;
+    min-height: 250px;
     padding: 1em;
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1s;
@@ -262,17 +263,23 @@ section.services img {
     animation-duration: 1s;
 }
 
+.testimonials p {
+    margin-top: 3em;
+}
+
 .quoteLeft, .quoteRight {
     color:rgb(148, 143, 143);
     font-size: 3em;
-    margin-top: 1.5em;
+    margin-top: 2em;
 }
 
 .quoteLeft {
+    left: 0;
     margin-left: 2em;
 }
 
 .quoteRight {
+    right:0;
     margin-right: 2em;
 }
 
@@ -295,7 +302,7 @@ section.services img {
 }
 
 #landing-image-moving {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/moving.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/moving04.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -387,5 +394,13 @@ section.services img {
 
     .servicesRightMobile {
         margin-right: 1em;
+    }
+
+    .testimonials {
+        min-height: 350px;
+    }
+
+    .quoteLeft, .quoteRight {
+        margin-top: 4.2em;
     }
 }
