@@ -17,7 +17,7 @@ function currentQuoteSlide(n) {
 function showQuoteSlides(n) {
   let i;
   if (n > quoteSlides.length) {slideQuoteIndex = 1}
-  if (n < 1) {slideQuoteIndex = slides.length}
+  if (n < 1) {slideQuoteIndex = quoteSlides.length}
   for (i = 0; i < quoteSlides.length; i++) {
       quoteSlides[i].style.display = "none";
   }
