@@ -138,6 +138,10 @@ section.services img {
     margin-top: 8vw !important;
 }
 
+.servicesLeftMobile:hover, .servicesRightMobile:hover {
+    transform: scale(1.1);
+}
+
 .slideshow {
     margin-top: 2em;
     width: 90%;
@@ -239,6 +243,41 @@ section.services img {
     font-size: 0.8em;
     text-align: center;
     margin-top: -1em;
+}
+
+.fa-quote-left {
+    font-size: 1.5em;
+    margin-right: 0.2em;
+}
+
+.testimonials {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.5em;
+    margin: 2em;
+    width: 80%;
+    padding: 1em;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.quoteLeft, .quoteRight {
+    color:rgb(148, 143, 143);
+    font-size: 3em;
+    margin-top: 1.5em;
+}
+
+.quoteLeft {
+    margin-left: 2em;
+}
+
+.quoteRight {
+    margin-right: 2em;
+}
+
+.testimonials {
+    display: none;
 }
 
 #nav-logo {
