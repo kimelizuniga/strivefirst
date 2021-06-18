@@ -64,6 +64,11 @@ section.services img {
     margin-bottom: 1.5em;
 }
 
+.videos {
+    width: 55%;
+    margin: 2em;
+}
+
 .fa-chevron-left, .fa-chevron-right {
     color: white;
     font-size: 4em;
